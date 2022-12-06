@@ -32,25 +32,50 @@ function elegirCurso(entrada) {
                 
 
             case "2":
-                alert(+nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de dolor cronico: ");
-                abrirFormulario();
-                despedirUsuario(nombreUsuario);
-                entrada = prompt("Escriba ESC para salir ");
-                break;
+                fechaIncioDolorCronico = new Date(2023,12,30);
+                if (chequearFechas(fechaIncioDolorCronico) == false) {
+                    alert("Lo sentimos pero el curso ya ha iniciado! Sera un placer tenerlo en la próxima edición!");
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }
+                else {
+                    alert(+nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de dolor cronico: ");
+                    abrirFormulario();
+                    despedirUsuario(nombreUsuario);
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }
            
             case "3":
-                alert(nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de Anestecia local: ");
-                abrirFormulario();
-                despedirUsuario(nombreUsuario);
-                entrada = prompt("Escriba ESC para salir ");
-                break;
+                fechaIncioAnesteciaLocal = new Date(2023,12,30);
+                if (chequearFechas(fechaIncioAnesteciaLocal) == false) {
+                    alert("Lo sentimos pero el curso ya ha iniciado! Sera un placer tenerlo en la próxima edición!");
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }
+                else {
+                    alert(nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de Anestecia local: ");
+                    abrirFormulario();
+                    despedirUsuario(nombreUsuario);
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }
+                
             
             case "4":
-                alert(nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de tratamientos artroscopicos: ");
-                abrirFormulario();
-                despedirUsuario(nombreUsuario);
-                entrada = prompt("Escriba ESC para salir ");
-                break;
+                fechaInicioTratamientosArtroscopicos = new Date(2021,07,16);
+                if (chequearFechas(fechaInicioTratamientosArtroscopicos) == false) {
+                    alert("Lo sentimos pero el curso ya ha iniciado! Sera un placer tenerlo en la próxima edición!");
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }
+                else {
+                    alert(nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de tratamientos artroscopicos: ");
+                    abrirFormulario();
+                    despedirUsuario(nombreUsuario);
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }  
            
             default:
                 alert("Disculpe que no podamos ayudarlo! El curso que ingreso no se encuentra disponible momentaneamente");
