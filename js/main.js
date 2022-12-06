@@ -1,8 +1,13 @@
-document.write('<script src="funciones.js"></script>');
+//variables y funciones
 
 let nombreUsuario = prompt("Bienvenido al sistema de inscripciones a cursos MEDU, ingrese su nombre por favor: ");
 let entrada = prompt("Hola"+" "+nombreUsuario+"! "+"Ingrese 1-7 regiones, 2-Dolor cronico, 3-Anestecia local, 4-Tratamientos artroscopicos escriba ESC para salir: ");
+let unaFecha;
+let fechaActual = new Date();
+
+//llamada de la funcion
 elegirCurso(entrada);
+
 
 //espacio para definir funciones
 function elegirCurso(entrada) {
@@ -11,11 +16,20 @@ function elegirCurso(entrada) {
 
         switch(entrada) {
             case "1": 
-                alert(nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de 7 regiones: ");
-                abrirFormulario();
-                despedirUsuario(nombreUsuario);
-                entrada = prompt("Escriba ESC para salir ");
-                break;
+                fechaIncio7regiones = new Date(2023,12,30);
+                if (chequearFechas(fechaIncio7regiones) == false) {
+                    alert("Lo sentimos pero el curso ya ha iniciado! Sera un placer tenerlo en la próxima edición!");
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }
+                else if (chequearFechas(fechaIncio7regiones) == true) {
+                    alert(nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de 7 regiones: ");
+                    abrirFormulario();
+                    despedirUsuario(nombreUsuario);
+                    entrada = prompt("Escriba ESC para salir ");
+                    break;
+                }
+                
 
             case "2":
                 alert(+nombreUsuario+" "+"seleccione aceptar y se abrira el formulario de inscripcion para el curso de dolor cronico: ");
@@ -73,4 +87,13 @@ function despedirUsuario(nombreUsuario) {
     alert("Gracias por confiar en nosotros"+" "+nombreUsuario+" "+"le aseguramos que será una experiencia sumamente enriquecedora");
 }
 
+function chequearFechas(unaFecha) {
+    if (unaFecha < fechaActual) {
+        return false;
+    }
+    else {
+        return true;
+    }
+
+}
 
