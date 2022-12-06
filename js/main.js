@@ -1,4 +1,4 @@
-//variables y funciones
+//definicion de variables
 
 let nombreUsuario = prompt("Bienvenido al sistema de inscripciones a cursos MEDU, ingrese su nombre por favor: ");
 let entrada = prompt("Hola"+" "+nombreUsuario+"! "+"Ingrese 1-7 regiones, 2-Dolor cronico, 3-Anestecia local, 4-Tratamientos artroscopicos escriba ESC para salir: ");
