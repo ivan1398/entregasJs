@@ -7,3 +7,68 @@
   font-family: 'questrial', sans-serif; /* Le aplico la tipografia a todos los elementos de mi programa */
 }
 
+/* Definicion de las variables para los colores */
+:root {
+  --clr-main: aqua;
+  --clr-white: white;
+  --clr-blue: blue;
+  --clr-green: darkgreen;
+  --clr-darkblue: darkblue;
+  --clr-orange: orange;
+  --clr-darkorange: darkorange;
+}
+
+.wrapper {
+  margin-top: 0;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 1000;  
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: var(--clr-darkblue);
+  color: var(--clr-white);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  background-color: var(--clr-white);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+}
+
+.tituloPrincipal {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  font-weight: 10;
+}
+
+.boton.menu {
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  gap: .3rem;
+  font-weight: 700;
+  padding: .8rem;
+  align-items: center;
+}
+
+.cursosInscripto {
+  margin-left: 19.8rem;
+  font-size: 0.5rem;
+}
