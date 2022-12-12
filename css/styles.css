@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Open+Sans:ital,wght@0,600;1,600&family=Prompt:wght@100;200;300;500;600;700;800;900&family=Questrial&family=Zen+Dots&display=swap');
+
+/*Fuente para el logo de la esquina superior izquierda*/
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Open+Sans:ital,wght@0,600;1,600&family=Prompt:wght@100;200;300;500;600;700;800;900&family=Questrial&family=Zen+Dots&display=swap'); 
+
+
 /* reset de css */
 * {
   margin: 0;
@@ -22,17 +27,30 @@
   margin-top: 0;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+}
 
+.header {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--clr-darkblue);
+  color: var(--clr-white);
 }
 
 .logo {
   font-size: 3rem;
-  font-weight: 1000;  
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  font-weight: 1000;
   text-align: center;
-  background-color: var(--clr-darkblue);
-  color: var(--clr-white);
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+}
+
+.logoMenu {
+  display: flex;
+  width: 18%;
+  font-family: 'Homemade Apple', cursive;
+  margin-left: 2rem;
 }
 
 .menu {
@@ -41,7 +59,10 @@
   background-color: var(--clr-white);
   margin-top: 1rem;
   margin-bottom: 3rem;
+}
 
+.menu :hover {
+  color: var(--clr-darkblue);
 }
 
 .tituloPrincipal {
@@ -66,9 +87,16 @@
   font-weight: 700;
   padding: .8rem;
   align-items: center;
+  text-decoration: none;  /*para que no quede subrayado cuando lo tocamos */
+
 }
 
-.cursosInscripto {
-  margin-left: 19.8rem;
-  font-size: 0.5rem;
+.menu.cursosInscripto {
+  font-size: 0.7rem;
+  margin-left: 23rem;
+}
+
+/************************* Manejo de cursos ************************/
+.contenedorCursos {
+  
 }

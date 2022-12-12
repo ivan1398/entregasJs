@@ -10,25 +10,37 @@
 <body>
 	<div class="wrapper"> <!--Clase contenedora del html -->
 		<aside class="aside"> <!--Es para contener todo el menu-->
-			<header>
+			<header class="header">
+				<h2 class="logoMenu">Medicina del dolor Uruguay</h2>
 				<h1 class="logo">Gestión de inscripciones MEDU</h1>
 			</header>
 			<nav>
 				<ul class="menu">
 					<li>
-						<button id = "Cursos de ecografia" class="boton menu botonCategoria">Todos los cursos</button>
+						<button id = "todos" class="boton menu botonCategoria">Todos los cursos</button>
+					</li>
+						<!-- <ul class="desplegable">
+							<li><a href="./formulario.html">submenu todos 1 </a></li>
+						</ul> 
+						<ul class="desplegable">
+							<li><a href="./formulario.html">submenu todos 2 </a></li>
+						</ul> 
+						<ul class="desplegable">
+							<li><a href="./formulario.html">submenu todos 3</a></li>
+						</ul>  -->
+
+						<!--Otra opcion del menu  -->
+					<li>
+						<button id = "ecografia" class="boton menu botonCategoria">Ecografía</button>
 					</li>
 					<li>
-						<button id = "Cursos de ecografia" class="boton menu botonCategoria">Ecografía</button>
+						<button id = "Kinesiología" class="boton menu botonCategoria">Kinesiología</button>
 					</li>
 					<li>
-						<button id = "Cursos de ecografia" class="boton menu botonCategoria">Kinesiología</button>
+						<button id = "dolor cronico" class="boton menu botonCategoria">Dolor crónico</button>
 					</li>
 					<li>
-						<button id = "Cursos de ecografia" class="boton menu botonCategoria">Dolor crónico</button>
-					</li>
-					<li>
-						<button id = "Cursos de ecografia" class="boton menu botonCategoria">Anestecia</button>
+						<button id = "Anestecia" class="boton menu botonCategoria">Anestecia</button>
 					</li>
 					<li>
 						<a class= "boton menu cursosInscripto" href="./inscriptos.html">Lista de cursos inscriptos<span class="numerito">0</span></a>
@@ -42,7 +54,20 @@
 		<main class="main"> <!--lugar en donde se van a poder ver todos los cursos -->
 			<h2 class="tituloPrincipal">Todos los cursos</h2>
 			<div id="ContenedorCursosId" class="contenedorCursos">
-				<!-- cargar cursos -->
+				<div class="tarjetaCurso">
+					<div class="tituloCurso">
+						Curso numero 1
+					</div>
+					<div class="imagenCurso">
+						<img src="./img/logo para el menu.jpeg" alt="">
+					</div>
+					<div class="descripcionCurso">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ut error perferendis exercitationem. Quasi reiciendis laboriosam adipisci iure et, ad harum mollitia quaerat ullam dolore alias expedita dolor blanditiis illo.
+					</div>
+					<button class="botonCurso">
+						Ir al formulario de inscripcion
+					</button>
+				</div>
 			</div>
 		</main>
 	</div>
