@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Open+Sans:ital,wght@0,600;1,600&family=Prompt:wght@100;200;300;500;600;700;800;900&family=Questrial&family=Zen+Dots&display=swap');
 
 /*Fuente para el logo de la esquina superior izquierda*/
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Open+Sans:ital,wght@0,600;1,600&family=Prompt:wght@100;200;300;500;600;700;800;900&family=Questrial&family=Zen+Dots&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Open+Sans:ital,wght@0,600;1,600&family=Prompt:wght@100;200;300;500;600;700;800;900&family=Questrial&family=Zen+Dots&display=swap');
 
 
 /* reset de css */
@@ -96,7 +96,37 @@
   margin-left: 23rem;
 }
 
+
+/* Menu desplegable */
+.desplegableContenedor {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-white);
+  text-decoration: none; 
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  gap: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+
+
+}
+
+.submenuItem :hover {
+  color: var(--clr-darkblue);
+}
+
+
 /************************* Manejo de cursos ************************/
-.contenedorCursos {
-  
+
+
+/***footer***/
+.textoFooter {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  background-color: var(--clr-green);
+  padding: 2rem;
 }
