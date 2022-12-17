@@ -5,6 +5,51 @@ let entrada = prompt("Hola"+" "+nombreUsuario+"! "+"Ingrese 1-7 regiones, 2-Dolo
 let unaFecha;
 let fechaActual = new Date();
 
+//declaracion de las clases
+class Cliente  {
+    constructor(nombre,edad,pais,especialidad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.pais = pais;
+        this.especialidad = especialidad
+    }
+};
+
+class Curso  {
+    constructor(nombre,modalidad,bibliografia,temas,fecha) {
+        this.nombre = nombre;
+        this.modalidad = modalidad;
+        this.bibliografia = bibliografia;
+        this.temas = temas;
+        this.fecha = fecha;
+    }
+        
+};
+
+class Inscripcion  {
+    constructor(Cliente, fecha){
+        this.Cliente = Cliente;
+        this.fecha = fecha;
+    }  
+};
+
+class Pago  {
+    constructor(importe,fecha){
+        this.importe = importe;
+        this.fecha = fecha;
+    }
+};
+
+class Formulario {
+    constructor(dni,numeroTel,codPostal,medioDeConoc,tieneEcografo,puedeViajar){
+        this.dni = dni;
+        this.numeroTel = numeroTel;
+        this.codPostal = codPostal;
+        this.medioDeConoc = medioDeConoc;
+        this.tieneEcografo = tieneEcografo;
+        this.puedeViajar = puedeViajar;
+    }
+}
 //llamada de la funcion
 elegirCurso(entrada);
 
@@ -121,4 +166,14 @@ function chequearFechas(unaFecha) {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
 
