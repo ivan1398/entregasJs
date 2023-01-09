@@ -2,10 +2,10 @@
 fechaActual = new Date();
 let clientePorPagar;
 let nuevoPago;
-let booleano;
 
 let nombreUsuario = prompt("Bienvenido al sistema de inscripciones a cursos MEDU, ingrese su nombre por favor: ");
 let entrada = prompt("Hola"+" "+nombreUsuario+"! "+"Ingrese 1 Para inscribirse en 'Curso introductorio eco dolor crónico' , Ingrese '2' Para inscribirse en 'Curso básico introductorio dolor y eco intervencionismo' Ingrese '3' Para inscribirse en 'XXII Curso MeDU de Ecografía  Intervencionista en dolor crónico, agudo y perianalgesia quirúrgica' o escriba ESC para salir: ");
+
 
 //declaracion de las clases
 class Curso  {
@@ -241,6 +241,7 @@ function mostrarDatos(clientePorPagar,nuevoPago){
     alert("El número de su tarjeta es: "+nuevoPago.numeroTarjeta);
     alert("El código de seguridad de su tarjeta es: "+nuevoPago.codSeguridad);
 };
+
 
 
 

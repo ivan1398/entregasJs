@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
+
+
 </head>
 <body>
     <div class="wrapper">
@@ -16,70 +19,63 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="boton menu botonVolver" href="./index.html">Continuar viendo los cursos</a>
+                        <a class="boton menu botonVolver" href="./index.html">
+                            <i class="bi bi-arrow-left-circle"></i>Continuar viendo los cursos
+                        </a>
                     </li>
                 </ul>
             </nav>
-            <footer>
-                <p class="textoFooter">© Copyright 2022 desarrollado por Ivan Bonti</p>
-            </footer>
         </aside>
         <main class="main">
-            <h2 class="tituloPrincipal">Listado de cursos donde se ira a inscribir</h2>
-            <div class="contenedorCursosComrpados">
-                <p class="cursosCompradosVacio">Usted aún no ha adquirido niguno de nuestros cursos, lo invitamos a que regrese seleccionando en el botón "Listado de cursos" y seleccione una opcion</p>
-                    <div class="cursosAquiridos disabled">
-                        <div class="curso">
-                            <img class="imagenCurso" src="" alt="">
-                            <div class="cursoTitulo">
-                                <small>Titulo</small>
-                                <h3>Curso 7 regiones</h3>
-                            </div>
-                            <div class="cursoPrecio">
-                                <small>Precio</small>
-                                <p>$1.500.000</p>
-                            </div>
-                            <button class="cursoEliminar">Eliminar curso</button>
+            <h2 class="tituloPrincipal active">Listado de cursos inscriptos</h2>
+            <div class="contenedorCursosComprados">
+                <p class="listadoVacio">Aún no te has inscripto a ningún curso <i class="bi bi-emoji-frown"></i></p>
+                <div class="cursosInscripto">
+                    <div class="cursoInscripto">
+                        <img class="imagenCarrito" src="./img/imagenCarrito.jpg" alt="">
+                        <div class="cursoAdquiridoTitulo">
+                            <small>Título</small>
+                            <h3>Curso introductorio eco dolor crónico</h3>
                         </div>
-                        <!-- Curso numero 2 -->
-                        <div class="curso">
-                            <img class="imagenCurso" src="" alt="">
-                            <div class="cursoTitulo">
-                                <small>Titulo</small>
-                                <h3>Curso de dolor cronico</h3>
-                            </div>
-                            <div class="cursoPrecio">
-                                <small>Precio</small>
-                                <p>$3.000.000</p>
-                            </div>
-                            <button class="cursoEliminar">Eliminar curso</button>
+                        <div class="cursoAdquiridoPrecio">
+                            <small>Precio</small>
+                            <p>$20.000</p>
                         </div>
-                        <!-- Curso numero 3 -->
-                        <div class="curso">
-                            <img class="imagenCurso" src="" alt="">
-                            <div class="cursoTitulo">
-                                <small>Titulo</small>
-                                <h3>Curso de anestecia local</h3>
-                            </div>
-                            <div class="cursoPrecio">
-                                <small>Precio</small>
-                                <p>$2.300.00</p>
-                            </div>
-                            <button class="cursoEliminar">Eliminar curso</button>
-                        </div>
+                        <button class="cursoAdquiridoEliminar"><i class="bi bi-trash3"></i></button>
                     </div>
-                <div class="cursosAcciones disabled">
-                    <button class="vaciarCursosAdquiridos">Vaciar cursos</button>
-                    <div class="accionesTotal">
-                        <p>Total: </p>
-                        <p id="Total">$5.600.000</p>
+                    <!-- ******************************  -->
+                    <div class="cursoInscripto">
+                        <img class="imagenCarrito" src="./img/imagenCarrito.jpg" alt="">
+                        <div class="cursoAdquiridoTitulo">
+                            <small>Título</small>
+                            <h3>Curso básico introductorio dolor y eco intervencionismo</h3>
+                        </div>
+                        <div class="cursoAdquiridoPrecio">
+                            <small>Precio</small>
+                            <p>$30.000</p>
+                        </div>
+                        <button class="cursoAdquiridoEliminar"><i class="bi bi-trash3"></i></button>
                     </div>
-                    <button class="comprarCursos">Aquirir cursos ahora</button>
                 </div>
-                <p class="mensajeAdquisicion disabled">Muchas gracias por su adquisicion le aseguramos que su experiencia con nosotros sera sumamente enriquecedora!</p>
+                <div class="cursosAdquiridosAcciones">
+                    <div class="cursosAccionesIzquierda">
+                        <button class="botonVaciar">Vaciar adquisiciones</button>
+                    </div>
+                    <div class="cursosAccionesDerecha">
+                        <div class="cursosAccionesTotal">
+                            <p>Total:</p>
+                            <p id="total">$50.000</p>
+                        </div>
+                        <button class="cursosAccionesAdquirir">Aquirir Ahora</button>
+
+                    </div>
+                </div>
             </div>
         </main>
+        <footer>
+            <p class="textoFooter">© Copyright 2022 desarrollado por Ivan Bonti</p>
+        </footer>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
